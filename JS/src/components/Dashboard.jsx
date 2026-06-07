@@ -52,7 +52,7 @@ function Dashboard() {
 
   return (
     <div
-      className="min-h-screen px-16 py-24 bg-cover bg-center"
+      className="min-h-[60rem] px-6 md:px-8 lg:px-16 py-24 bg-cover bg-center"
       style={{ backgroundImage: "url('/star.jpg')" }}
       aria-label="Imagem do céu estrelado ao fundo"
     >
@@ -72,7 +72,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {sensores.slice(0, 3).map(sensor => {
           const status = getStatus(sensor)
           const cores = coresStatus[status]
@@ -86,7 +86,7 @@ function Dashboard() {
         })}
       </div>
 
-      <div className="grid grid-cols-2 gap-6 mt-6 w-2/3 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 w-full lg:w-2/3 mx-auto">
         {sensores.slice(3).map(sensor => {
           const status = getStatus(sensor)
           const cores = coresStatus[status]

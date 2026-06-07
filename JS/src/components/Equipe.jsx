@@ -7,14 +7,14 @@ function Equipe() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center px-16"
+      className="min-h-[50rem] bg-cover bg-center flex flex-col items-center justify-center px-6 md:px-8 lg:px-16"
       style={{ backgroundImage: "url('/ceu.jpg')" }}
       aria-label="Imagem do céu ao fundo"
     >
-      <h1 className="text-white text-7xl font-bold tracking-widest mb-4">STACK FORCE</h1>
+      <h1 className="text-white text-[2rem] md:text-5xl lg:text-7xl font-bold tracking-widest mb-4 text-center">STACK FORCE</h1>
       <div className="w-32 h-px bg-blue-400 mb-16" />
 
-      <div className="flex gap-8 w-full max-w-4xl">
+      <div className="flex flex-col md:flex-row gap-8 w-full max-w-4xl">
         {integrantes.map((pessoa) => (
           <div
             key={pessoa.rm}

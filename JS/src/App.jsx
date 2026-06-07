@@ -4,6 +4,7 @@ import Tecnologia from './components/Tecnologia'
 import ComoFunciona from './components/ComoFunciona'
 import Dashboard from './components/Dashboard'
 import Equipe from './components/Equipe'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <section id="como-funciona"><ComoFunciona /></section>
       <section id="dashboard"><Dashboard /></section>
       <section id="equipe"><Equipe /></section>
+      <Footer />
     </div>
   )
 }
