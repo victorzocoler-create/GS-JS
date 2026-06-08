@@ -19,6 +19,7 @@ Sistema de telemetria em tempo real para monitoramento de missões tripuladas da
 ## Como rodar localmente
 
 ```bash
+cd JS
 npm install
 npm run dev
 ```
